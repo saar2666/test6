@@ -1,11 +1,13 @@
 import random
+randedNum = random.randint(1, 9)
+print randedNum
+guessNum = ''
 
-guessNum = input("guess the number")
-randedNum = random.choice(1,9)
-
-if guessNum < randedNum:
-    print("too low")
-elif guessNum > randedNum:
-    print('too high')
-else:
-    print('correct!')
+while guessNum != 'exit' and guessNum != randedNum:
+    guessNum = input("guess the number: ")
+    if guessNum < randedNum:
+        print("too low,try again")
+    elif guessNum > randedNum:
+        print('too high,try again')
+    elif guessNum == randedNum:
+        print('correct!')
