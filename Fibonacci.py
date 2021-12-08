@@ -1,4 +1,4 @@
-num = input('how many fibonacci number do you want? :')
+
 
 
 def fibonacci(num):
@@ -16,5 +16,5 @@ def fibonacci(num):
             i += 1
 
     return fib
-
-print(fibonacci(num))
+print ("fibonacci with 8 chars: " )
+print(fibonacci(8))
